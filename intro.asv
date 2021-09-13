@@ -45,12 +45,7 @@ figure
 imshow(Igray)
 
 %% convertir a blanco y negro
-iBW = imbinarize(Igray,0.1);
-iBWGB = imbinarize(Inew,0.1);
+iBW = imbinarize(Inew);
+iBWGB = imbinarize();
 figure
-subplot(131)
 imshow(iBW)
-subplot(132)
-imshow(iBWGB)
-subplot(133)
-imshowpair(iBW,iBWGB)
